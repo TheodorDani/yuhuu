@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home</title>
+
+    <!-- Fav icons -->
+    <script src="https://kit.fontawesome.com/46b7ceee20.js" crossorigin="anonymous"></script>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baumans&family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet"> 
+    <!-- CSS --> 
+    <link href="css/index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navbar / Header -->
+    <div class="navcontainer" id="navcontainer">
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+                <img src="img\logo-pilpreskini.png" alt="logo-portal" width="35%">
+            </div>
+            <div class="nav-btn">
+              <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div> 
+            <div class="nav-links">
+                <a class="active" href="index.html">Home</a>
+                <a href="isu.html">Memories</a>
+            </div>
+        </div>
+    </div>
+    
+    <!--Landing page-->
+    <div class="slideshow-container" style="margin-bottom: 6vw;">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <img src="img/image-1.jpg" style="width:100%">
+        <p>2023 is really fun, isn't?</p>
+      </div> 
+      <div class="mySlides fade">
+        <img src="img/image-2.jpg" style="width:100%">
+        <p>Jaman masih kurus, xixixi</p>
+      </div>   
+      <div class="mySlides fade">
+        <img src="img/image-3.jpg" style="width:100%">
+        <p>duar kaget! (ga nemu foto lagi)</p>
+      </div>
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <!-- The dots/circles -->
+      <div class="dotgroup">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div> 
+
+    <section style="margin-bottom: 6vw;">
+      <div class="title">
+          <h3>On This Special Day</h3>
+          <h2>November 13th</h2>
+          <p>these two lovebirds decided to take leap of faith. They flew side by side, their wings beating in harmony. They chattered to each other, sharing stories and secrets. They laughed and sang, their voices filling the air with joy. They landed on a branch and gazed into each other's eyes, their hearts filled with love.</p>
+      </div>
+      <div class="gallery" style="margin-top: 2vw;">
+          <figure class="gallery__item gallery__item--1">
+            <img id="myImg" src="img/act1.png" class="gallery__img" alt="Geez, this is the main reason why my wight increased untill 10kg, still, i am happy with it!">
+            <div class="imgcontent">
+              <h3>Many Foods</h3>
+              <p>reasons why my weight increased</p>
+            </div>
+          </figure>
+          <figure class="gallery__item gallery__item--2">
+            <img id="myImg" src="img/act4.png" class="gallery__img" alt="We love to support each other by giving present, sometimes we just give small present randomly, that's kinda cute.">
+            <div class="imgcontent">
+              <h3>Many Surprises</h3>
+              <p>reasons why my fashion changed</p>
+            </div>
+          </figure>
+          <figure class="gallery__item gallery__item--3">
+            <img id="myImg" src="img/act2.png" class="gallery__img" alt="I bet there are more than 100 moments where you cried in a year. It means tthat it's possible for you to cry at least twice a week">
+            <div class="imgcontent">
+              <h3>Many Cries</h3>
+              <p>I wonder, are you really happy b?</p>
+            </div>
+          </figure>
+          <figure class="gallery__item gallery__item--4">
+            <img id="myImg" src="img/act3.png" class="gallery__img" alt="Many fun activities helped us to understand each other">
+            <div class="imgcontent">
+              <h3>Many Activites</h3>
+              <p>reasons why my money gone</p>
+            </div>
+          </figure>
+          <div id="myModal" class="modal">
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+          </div>
+      </div>
+    </section>
+    
+    <section style="margin-bottom: 6vw;">
+      <div class="title">
+          <h2>Our Selfies📸</h2>
+          <p>One of the proofs that you changed me <span style="color: #e76a91;">(in a positive way, of course)</span>. There are so many selfies that we took. Mirror selfies, car selfies, virtual selfies, photobooths, and many more. Thank you for always wanting to capture all the moments. If it wasn't you, maybe I could not create this website. Even though I have to wait patienly to eat my food when i am starving because of this, <span style="color: #e76a91;">I am fine, gwenchana.</span></p>
+      </div>
+      <div class="slider" style="margin-top: 2vw;">
+        <div class="slide-track">
+          <div class="slide">
+            <img src="img/1.png" height="200" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img/2.png" height="200" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img/3.png" height="200" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img/4.png" height="200" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img/5.png" height="200" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img/6.png" height="200" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img/7.png" height="200" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img/8.png" height="200" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img/9.png" height="200" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img/10.png" height="200" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img/11.png" height="200" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img/12.png" height="200" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img/13.png" height="200" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img/14.png" height="200" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img/15.png" height="200" width="250" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-bottom: 6vw;">
+      <h2>Last But Not Least</h2>
+        <div class="desc3">
+          <p>Thank you for always being by my side for this year. <span style="color: #e76a91;">You and your family have given my boring life a new color</span>. I am happy with our first year as a couple. We have already talked many times about the reasons why I love and admire you. So, I think I don't need to mention it here. However, there will always be ups and downs in any relationship. <span style="color: #e76a91;">I hope you can always be my support system when those things happen, and I can be yours as well.</span> Either the problem is between us or we are just struggling with our own problems. At the very beginning, you and I had many different values. Slowly, we have been able to understand each other. We have been able to overcome our problems, especially our egos. I am sorry if sometimes I make you feel like I don't love you (even though I know many times you're just being hyperbolic, hahaha), <span style="color: #e76a91;">but trust me I love you more than you will ever know</span>.</p>
+          <br>
+          <p>Lastly, I am truly thankful because you have really helped me to get closer to Jesus. You have opened the path for me to better understand who Jesus is. <span style="color: #e76a91;">Through you, I now know how to worship and praise the Lord in a way that suits me. Now I know where to go and what to do whenever I feel stuck, stressed, or anxious. I understand how to surrender my problems to Jesus and believe in Him not only with my mouth but also in my heart.</span> Although I know that I am not a perfect sheep, and I often wander away from my flock, I know that I always want to learn to be better and to seek His righteousness. <span style="color: #e76a91;">I hope that His blessing will always stay with us, not only personally but also in our relationship. May our love continue to grow and flourish under His guidance and protection.</span></p>
+        </div>
+        <iframe style="display: none;" src="https://open.spotify.com/embed/track/3hYkmzdRTtPfsQB1Dz0nRp?utm_source=generator" width="300" height="300" frameborder="0" allowtransparency="true"></iframe>
+        <iframe style="display: none;" src="https://open.spotify.com/embed/track/3hYkmzdRTtPfsQB1Dz0nRp?utm_source=generator" width="300" height="300" frameborder="0" allowtransparency="true"></iframe>
+        <iframe style="margin-top: 2vw; border-radius:12px;" src="https://open.spotify.com/embed/track/3hYkmzdRTtPfsQB1Dz0nRp?utm_source=generator&theme=0" frameborder="0" allowtransparency="true"></iframe>
+        
+    </section>
+      
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footercontainer">
+          <div class="footer-content">
+            <img src="img\logo-pilpreskini.png" alt="logo-portal" width="120">
+            <p style="text-align: start">LovePortal is a news portal of us that give up-to-date coverage of our love journey, as well as in-depth analysis of our activities</p>
+          </div>
+          <div class="footer-bottom">
+              <div class="footer-social">
+                <ul class="social-icons">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+              </div>
+              <p style="text-align: end">copyright © 2023 LovePortal</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
+
+<script>
+  var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navcontainer").style.top = "0";
+  } else {
+    document.getElementById("navcontainer").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+} 
+</script>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+} 
+</script>
+
+<script>
+// create references to the modal...
+var modal = document.getElementById('myModal');
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName('gallery__img');
+// the image in the modal
+var modalImg = document.getElementById("img01");
+// and the caption in the modal
+var captionText = document.getElementById("caption");
+
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+} 
+</script>
